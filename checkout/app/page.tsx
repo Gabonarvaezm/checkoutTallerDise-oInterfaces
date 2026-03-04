@@ -82,12 +82,12 @@ export default function ShoppingCartFixed() {
       <div className="w-full max-w-6xl">
         <div className="flex">
           
-          {/* LEFT SIDE - Shopping Cart - FIXED WIDTH */}
+         
           <div className="w-[60%] bg-white rounded-l-2xl shadow-xl p-8">
             {/* Header */}
             <div className="flex items-center gap-3 mb-8">
               <div className="w-10 h-10 rounded-full bg-black flex items-center justify-center">
-                {/* ⚠️ LOGO ICON - Replace with your actual logo */}
+                
                 <div className="w-3 h-3 bg-white rounded-full" />
               </div>
               <h1 className="text-2xl font-light text-gray-800 tracking-wide">
@@ -121,12 +121,12 @@ export default function ShoppingCartFixed() {
                     </p>
                   </div>
 
-                  {/* Color */}
+                  
                   <div className="text-sm text-gray-600 min-w-[60px]">
                     {item.color}
                   </div>
 
-                  {/* Quantity Controls */}
+                 
                   <div className="flex flex-col gap-1">
                     <button
                       onClick={() => updateQuantity(item.id, 1)}
@@ -154,7 +154,7 @@ export default function ShoppingCartFixed() {
                     </p>
                   </div>
 
-                  {/* Remove Button */}
+                
                   <button
                     onClick={() => removeItem(item.id)}
                     className="w-8 h-8 rounded-lg hover:bg-red-50 flex items-center justify-center text-gray-400 hover:text-red-500 transition-all opacity-0 group-hover:opacity-100"
@@ -183,10 +183,10 @@ export default function ShoppingCartFixed() {
             </div>
           </div>
 
-          {/* RIGHT SIDE - Card Details Panel - FIXED WIDTH - SMOKY BLACK BACKGROUND - COLLAPSIBLE */}
+         
           <div className={`w-[40%] bg-neutral-800 text-white rounded-r-2xl shadow-2xl relative transition-all duration-300 ${isPanelOpen ? 'translate-x-0' : 'translate-x-[95%]'}`}>
             
-            {/* Toggle Button - 3 DOTS ON LEFT SIDE */}
+            
             <button
               onClick={() => setIsPanelOpen(!isPanelOpen)}
               className="absolute left-0 top-8 w-6 h-14 bg-neutral-800 rounded-l-md flex flex-col items-center justify-center gap-1 -translate-x-full shadow-lg"
@@ -205,7 +205,7 @@ export default function ShoppingCartFixed() {
                 </h2>
               </div>
 
-              {/* Card Type Selection */}
+              
               <div className="mb-8">
                 <label className="block text-sm text-gray-300 mb-3">
                   Select Card Type
@@ -220,8 +220,7 @@ export default function ShoppingCartFixed() {
                         : 'bg-white/5 hover:bg-white/10'
                     }`}
                   >
-                    {/* ⚠️ MASTERCARD LOGO - Replace with actual logo */}
-                    {/* <img src="/icons/cards/mastercard.svg" alt="Mastercard" className="h-6" /> */}
+                    
                     <div className="flex gap-[-4px]">
                       <div className="w-5 h-5 rounded-full bg-red-500 opacity-80" />
                       <div className="w-5 h-5 rounded-full bg-orange-500 opacity-80 -ml-2" />
@@ -237,8 +236,7 @@ export default function ShoppingCartFixed() {
                         : 'bg-white/5 hover:bg-white/10'
                     }`}
                   >
-                    {/* ⚠️ VISA LOGO - Replace with actual logo */}
-                    {/* <img src="/icons/cards/visa.svg" alt="Visa" className="h-6" /> */}
+                    
                     <div className="text-blue-400 font-bold text-lg italic">VISA</div>
                   </button>
 
@@ -251,14 +249,13 @@ export default function ShoppingCartFixed() {
                         : 'bg-white/5 hover:bg-white/10'
                     }`}
                   >
-                    {/* ⚠️ VERVE LOGO - Replace with actual logo */}
-                    {/* <img src="/icons/cards/verve.svg" alt="Verve" className="h-6" /> */}
+                    
                     <div className="text-green-400 font-bold text-sm">VERVE</div>
                   </button>
                 </div>
               </div>
 
-              {/* Card Number */}
+             
               <div className="mb-6">
                 <label className="block text-sm text-gray-300 mb-2">
                   Card Number
@@ -271,7 +268,7 @@ export default function ShoppingCartFixed() {
                 />
               </div>
 
-              {/* Expiry and CVV */}
+              
               <div className="flex gap-4 mb-auto">
                 <div className="flex-1">
                   <label className="block text-sm text-gray-300 mb-2">
@@ -297,7 +294,7 @@ export default function ShoppingCartFixed() {
                 </div>
               </div>
 
-              {/* Checkout Button */}
+             
               <button className="w-full bg-gradient-to-r from-yellow-400 to-yellow-500 hover:from-yellow-500 hover:to-yellow-600 text-gray-900 font-semibold py-4 rounded-xl transition-all duration-300 transform hover:scale-[1.02] hover:shadow-xl mt-8">
                 Checkout
               </button>
